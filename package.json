@@ -1,0 +1,28 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "example next js app with typescript",
+  "main": "index.js",
+  "author": "matthew.padich@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf .next",
+    "dev": "yarn clean && node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.3",
+    "@types/react": "^16.8.13",
+    "@zeit/next-typescript": "^1.1.1",
+    "fork-ts-checker-webpack-plugin": "^1.0.2",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.3"
+  }
+}
