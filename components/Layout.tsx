@@ -31,6 +31,9 @@ interface QueryResponse {
   }
 }
 
+// @TODO move this query to a better place
+// we should be able to pass down the whole gallery to a given page
+// without having to run the query again :)
 const Layout: React.SFC = props => (
   <Query query={GALLERY_QUERY}>
     {({ data, loading, error }: any) => {
