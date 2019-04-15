@@ -7,3 +7,5 @@ export const slugify = (text: string) =>
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, '') // Trim - from end of text
+
+export const isBrowser = !!(process as any).browser

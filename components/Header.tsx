@@ -5,8 +5,13 @@ const linkStyle = {
   marginRight: 15,
 }
 
-const Header = () => (
+interface Props {
+  galleryName: string
+}
+
+const Header = ({ galleryName }: Props) => (
   <div>
+    <h1>{galleryName}</h1>
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
