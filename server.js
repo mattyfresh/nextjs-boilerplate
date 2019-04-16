@@ -17,9 +17,9 @@ app
 
     // we would have to do something like this for
     // `/galleries` routes
-    server.get('/post/:id', (req, res) => {
-      const actualPage = '/post'
-      const queryParams = { title: req.params.id }
+    server.get('/gallery/:id', (req, res) => {
+      const actualPage = '/galleryItem'
+      const queryParams = { galleryName: req.params.id }
       app.render(req, res, actualPage, queryParams)
     })
 

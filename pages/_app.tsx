@@ -12,7 +12,6 @@ interface Props {
 class MyApp extends App<Props> {
   render() {
     const { Component, pageProps, apolloClient } = this.props
-
     return (
       <Container>
         <ApolloProvider client={apolloClient}>
