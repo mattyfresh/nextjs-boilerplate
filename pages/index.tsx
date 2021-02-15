@@ -1,15 +1,15 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import PostLinkItem from '../components/PostLinkItem'
+import GalleryLinkItem from '../components/GalleryLinkItem'
 
 export default () => (
   <Layout>
     <h1>Home Page</h1>
     <ul>
-      <PostLinkItem title="Hello Next.js" />
-      <PostLinkItem title="Learn Next.js is awesome" />
-      <PostLinkItem title="Deploy apps with Zeit" />
+      <GalleryLinkItem title="303 Gallery" />
+      <GalleryLinkItem title="Mosto Rojas" />
+      <GalleryLinkItem title="Fraenkel Gallery" />
     </ul>
   </Layout>
 )
